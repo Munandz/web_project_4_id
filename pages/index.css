@@ -19,7 +19,8 @@
 }
 
 .header__container {
-    width: 65%;
+    width: 880px;
+    align-items: center;
 }
 
 .header__logo {
@@ -29,6 +30,8 @@
 .header__line {
     border-top: 1px solid #545454;
     opacity: 0.7;
+    width: 880px;
+    margin: 0;
 }
 
 /* Profile */
