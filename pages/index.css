@@ -1,0 +1,202 @@
+@import url(../font/inter.css);
+
+.root {
+    background-color: black;
+    min-width: 1280px;
+    font-family: 'Inter';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__container {
+    width: 65%;
+}
+
+.header__logo {
+    padding: 4% 0% 3% 0%;
+}
+
+.header__line {
+    border-top: 1px solid #545454;
+    opacity: 0.7;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 2.5% 0;
+}
+
+.profile__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 18% 60% 22%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        'avatar info add-btn';
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 880px;
+}
+    
+
+.profile__avatar {
+    border-radius: 50%;
+    width: 75%;
+    position: relative;
+    grid-area: avatar;
+}
+
+.profile__info {
+    display: grid;
+    grid-template-rows: 66% 34%;
+    grid-template-columns: 72% 28%;
+    grid-template-areas:
+        'username edit-btn'
+        'description description';
+    position: relative;
+    width: 103%;
+    height: 70%;
+    margin: 0 0 0 -2%;
+    align-items: baseline;
+}
+
+.profile__edit-btn {
+    margin: 0 0 0 0%;
+    padding: 3%;
+    border: 1px solid #FFFFFF;
+    background-color: black;
+    grid-area: edit-btn;
+    position: relative;
+    width: 7%;
+}
+
+.profile__username {
+    color: white;
+    font-weight: 500;
+    font-size: 262.5%;
+    line-height: 1.14;
+    margin: 0 0 0% 0;
+    grid-area: username;
+}
+
+.profile__description {
+    color: white;
+    font-weight: 400;
+    font-size: 112.50%;
+    line-height: 1.14;
+    margin: 0 0 0 0;
+    grid-area: description;
+}
+
+.profile__add-btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 5% 30%;
+    display: block;
+    grid-area: add-btn;
+    position: relative;
+    margin: 0 0 0 27%;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 0 0;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+        'one two three'
+        'four five six';
+    width: 880px;
+    justify-items: center;
+    grid-gap: 2.5% 2%;
+}
+
+.card-one {
+    position: relative;
+    grid-area: one;
+}
+
+.card-two {
+    position: relative;
+    grid-area: two;
+}
+
+.card-three {
+    position: relative;
+    grid-area: three;
+}
+
+.card-four {
+    position: relative;
+    grid-area: four;
+}
+
+.card-five {
+    position: relative;
+    grid-area: five;
+}
+
+.card-six {
+    position: relative;
+    grid-area: six;
+}
+
+.card__rectangle {
+    border-radius: 10px;
+    width: 282px;
+    height: 361px;
+    background-color: white;
+    position: relative;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 78% 22%;
+    align-items: center;
+}
+
+.card__image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: 7% 80% 7% 6%;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas:
+        '. paragraph heart .';
+    margin: 0;
+    align-items: center;
+}
+
+.card__paragraph {
+    font-weight: 900;
+    font-size: 150%;
+    line-height: 1.2;
+    color: black;
+    grid-area: paragraph;
+}
+
+.card__heart {
+    color: black;
+    grid-area: heart;
+}
