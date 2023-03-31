@@ -10,6 +10,7 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    margin: 0;
 }
 
 /* Header */
@@ -118,7 +119,7 @@
 .cards {
     display: flex;
     justify-content: center;
-    margin: 4% 0 0 0;
+    margin: 4% 0 7% 0;
 }
 
 .cards__container {
@@ -202,4 +203,21 @@
 .card__heart {
     color: black;
     grid-area: heart;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container {width: 880px;}
+
+.footer__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 112.5%;
+    line-height: 1.2;
+    color: #545454;
+    margin: 0 0 5% 0;
 }
