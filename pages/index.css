@@ -151,6 +151,10 @@
     width: 3.5%;
     display: block;
 }
+.profile__info_edit-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
 @media only screen and (max-width: 320px) {
     .profile__info_edit-btn {
         width: 4%;
@@ -159,7 +163,7 @@
     }
 }
 
-.profile__info_username {
+.profile__info_name {
     color: white;
     font-weight: 500;
     font-size: 262.5%;
@@ -174,7 +178,7 @@
     }
 }
 
-.profile__info_description {
+.profile__info_job {
     color: white;
     font-weight: 400;
     font-size: 112.50%;
@@ -197,7 +201,11 @@
     display: block;
     grid-area: add-btn;
     position: relative;
-    margin: 0 0 0 27%;
+    margin: 0 0 0 25%;
+}
+.profile__add-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 @media only screen and (max-width: 320px) {
     .profile__add-btn {
@@ -293,6 +301,10 @@
     color: black;
     grid-area: heart;
 }
+.cards__heart:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
 
 /* Footer */
 .footer {
@@ -323,49 +335,66 @@
     margin: 0 0 5% 0;
 }
 
-/* Form */
-.form {
-    position: absolute;
+/* Pop-Up */
+.popup {
+    position: fixed;
     top: 0%;
     width: 100%;
     height: 100%;
+    display: none;
+    z-index: 1;
 }
 
-.form__close-icon {
-    position: absolute;
-    left: 67%;
-    top: 12%;
-    z-index: 2;
+.popup_opened {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 @media only screen and (max-width: 320px) {
-    .form__close-icon {
-        top: 2.5%;
-        left: 85%;
-        width: 8%;
+    .popup__container {
+        width: 100%;
     }
 }
 
-.form__form-rectangle {
-    position: absolute;
-    width: 430px;
+.popup__close-icon {
+    position: relative;
+    margin: 0 0 1% 76%;
+    z-index: 2;
+}
+.popup__close-icon:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+@media only screen and (max-width: 320px) {
+    .popup__close-icon {
+        width: 6%;
+        margin: 0 0 7% 75%;
+    }
+}
+
+.popup__popup-form {
+    position: relative;
+    width: 70%;
     height: 330px;
-    left: 33%;
-    top: 15%;
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     z-index: 2;
 }
 @media only screen and (max-width: 320px) {
-    .form__form-rectangle {
+    .popup__popup-form {
         width: 88%;
-        height: 10%;
-        left: 7%;
-        top: 4%;
     }
 }
 
-.form__paragraph {
+.popup__form-header {
     font-weight: 900;
     font-size: 150%;
     line-height: 1.2;
@@ -373,53 +402,71 @@
     margin: 8% 0 11% 8%;
 }
 @media only screen and (max-width: 320px) {
-    .form__paragraph {
-        margin: 8% 0 16% 8%;
+    .popup__form-header {
+        margin: 8% 0 23% 8%;
     }
 }
 
-.form__field {
+.popup__field {
     display: flex;
     margin: 7% 0 0 8%;
     flex-direction: column;
 }
+@media only screen and (max-width: 320px) {
+    .popup__field {
+        margin: 13% 0 0 8%
+    }
+}
 
-.form__field_paragraph {
+.popup__field_name {
     font-weight: 400;
     font-size: 87.5%;
     line-height: 1.2;
     margin: 0;
-}
-
-.form__field_line {
-    opacity: 0.2;
-    border: 1px solid #000000;
     width: 90%;
-    margin: 2% 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 2% 0 2% 0.5%;
 }
 
-.form__submit-btn {
-    background: #000000;
-    border-radius: 2px;
+.popup__field_job {
+    font-weight: 400;
+    font-size: 87.5%;
+    line-height: 1.2;
+    margin: 5% 0 0 0;
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 2% 0 2% 0.5%;
+}
+
+.popup__submit-btn {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 3%;
     width: 83%;
     height: 15%;
-    margin: 14% 0 0 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form__submit-btn_paragraph {
+    margin: 10% 0 0 8%;
     font-weight: 400;
     font-size: 112.5%;
     line-height: 1.2;
-    background: none;
-    border-radius: 0%;
-    color: #fff;
-    margin: 0;
+    padding: 0;
+}
+.popup__submit-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 320px) {
+    .popup__submit-btn {
+        margin: 20% 0 0 8%
+    }
 }
 
-.form__rectangle {
+.popup__rectangle {
     position: absolute;
     top: 0%;
     width: 100%;
