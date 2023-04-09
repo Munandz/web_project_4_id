@@ -21,38 +21,38 @@
 }
 
 .header__container {
-    width: 880px;
+    width: 69%;
     display: block;
     position: relative;
 }
 @media only screen and (max-width: 320px) {
     .header__container {
-        width: 320px;
+        width: 100%;
     }
 }
 
 .header__logo {
-    padding: 7% 0% 9% 0%;
+    padding: 7% 0% 5% 0%;
     display: block;
 }
 @media only screen and (max-width: 320px) {
     .header__logo {
         width: 126px;
         position: relative;
-        margin: 0 0 0 10%;
+        margin: 0 0 3% 10%;
     }
 }
 
 .header__line {
     border-top: 1px solid #545454;
     opacity: 0.7;
-    width: 880px;
+    width: 100%;
     display: block;
     margin: 0;
 }
 @media only screen and (max-width: 320px) {
     .header__line {
-        width: 320px;
+        width: 100%;
     }
 }
 
@@ -69,14 +69,13 @@
 }
 
 .profile__container {
-    height: 100%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 100%;
     grid-template-areas:
         'avatar info add-btn';
     position: relative;
-    width: 880px;
+    width: 69%;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -89,7 +88,7 @@
             'avatar'
             'info'
             'add-btn';
-        width: 320px;
+        width: 100%;
         justify-items: center;
         height: 320px;
     }
@@ -113,12 +112,11 @@
     display: flex;
     flex-direction: column;
     width: 103%;
-    margin: 0 0 0 -2%;
-    align-items: center;
+    margin: 0 0 0 0;
 }
 @media only screen and (max-width: 320px) {
     .profile__info {
-        
+        align-items: center;
     }
 }
 
@@ -128,16 +126,13 @@
     width: 77%;
     align-items: baseline;
     flex-direction: row-reverse;
-    margin: 0 0 0 -26%;
+    margin: 0 0 0 0;
 }
 @media only screen and (max-width: 320px) {
     .profile__info_group {
-        grid-template-rows: 66% 34%;
-        grid-template-columns: 58% 10%;
         width: 70%;
         justify-items: center;
         justify-content: center;
-        margin: 0;
     }
 }
 
@@ -146,7 +141,6 @@
     padding: 1.1%;
     border: 1px solid #FFFFFF;
     background-color: black;
-    grid-area: edit-btn;
     position: relative;
     width: 3.5%;
     display: block;
@@ -169,11 +163,10 @@
     font-size: 262.5%;
     line-height: 1.14;
     margin: 0;
-    grid-area: username;
     display: block;
 }
 @media only screen and (max-width: 320px) {
-    .profile__info_username {
+    .profile__info_name {
         font-size: 137.5%;
     }
 }
@@ -184,11 +177,10 @@
     font-size: 112.50%;
     line-height: 1.14;
     margin: 2% 0 0 0;
-    grid-area: description;
     display: block;
 }
 @media only screen and (max-width: 320px) {
-    .profile__info_description {
+    .profile__info_job {
         font-size: 87.5%;
         text-align: center;
     }
@@ -226,16 +218,17 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
-    width: 880px;
+    width: 69%;
     justify-items: center;
     grid-gap: 2%;
-    margin: 0 0 5.5% 0;
+    margin: 0 0 1.5% 0;
 }
 @media only screen and (max-width: 320px) {
     .cards__container-up {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
-        width: 320px;
+        width: 90%;
+        margin: 0 0 5% 0;
     }
 }
 
@@ -243,7 +236,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
-    width: 880px;
+    width: 69%;
     justify-items: center;
     grid-gap: 2%;
     margin: 0;
@@ -252,7 +245,8 @@
     .cards__container-down {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
-        width: 320px;
+        width: 90%;
+        margin: 15% 0 0 0;
     }
 }
 
@@ -262,8 +256,7 @@
 
 .cards__rectangle {
     border-radius: 10px;
-    width: 282px;
-    height: 361px;
+    width: 100%;
     background-color: white;
     position: relative;
     display: grid;
@@ -318,11 +311,11 @@
 }
 
 .footer__container {
-    width: 880px;
+    width: 69%;
 }
 @media only screen and (max-width: 320px) {
     .footer__container {
-        width: 320px;
+        width: 100%;
     }
 }
 
@@ -374,8 +367,8 @@
 }
 @media only screen and (max-width: 320px) {
     .popup__close-icon {
-        width: 6%;
-        margin: 0 0 7% 75%;
+        width: 7%;
+        margin: 0 0 6% 75%;
     }
 }
 
@@ -416,6 +409,10 @@
     .popup__field {
         margin: 13% 0 0 8%
     }
+}
+
+.popup__label {
+
 }
 
 .popup__field_name {
@@ -468,7 +465,6 @@
 
 .popup__rectangle {
     position: absolute;
-    top: 0%;
     width: 100%;
     height: 100%;
     z-index: 1;
