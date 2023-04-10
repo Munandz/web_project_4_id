@@ -7,4 +7,4 @@ Proyek kali ini saya membuat halaman interaktif, tempat pengguna dapat menambahk
 Gambar di halaman ini diambil dari [Unsplash](https://unsplash.com) atas nama Kirill Pershin.
 
 ### Pembaruan terakhir
-Perubahan tulisan pada README.
+Perubahan tulisan pada file README.md
