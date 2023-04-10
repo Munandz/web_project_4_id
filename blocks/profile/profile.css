@@ -1,0 +1,10 @@
+.profile {
+    display: flex;
+    margin: 2.5% 0;
+    justify-content: center;
+}
+@media only screen and (max-width: 320px) {
+    .profile {
+        position: relative;
+    }
+}

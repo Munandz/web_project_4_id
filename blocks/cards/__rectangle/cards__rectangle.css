@@ -1,0 +1,9 @@
+.cards__rectangle {
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-rows: 78% 22%;
+    align-items: center;
+}

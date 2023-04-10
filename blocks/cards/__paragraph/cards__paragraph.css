@@ -1,0 +1,10 @@
+.cards__paragraph {
+    font-weight: 900;
+    font-size: 150%;
+    line-height: 1.2;
+    color: black;
+    grid-area: paragraph;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,0 +1,17 @@
+.cards__container-down {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    width: 69%;
+    justify-items: center;
+    grid-gap: 2%;
+    margin: 0;
+}
+@media only screen and (max-width: 320px) {
+    .cards__container-down {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        width: 90%;
+        margin: 15% 0 0 0;
+    }
+}

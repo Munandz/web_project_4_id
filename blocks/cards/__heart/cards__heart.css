@@ -1,0 +1,8 @@
+.cards__heart {
+    color: black;
+    grid-area: heart;
+}
+.cards__heart:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}

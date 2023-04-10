@@ -1,0 +1,25 @@
+.profile__container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        'avatar info add-btn';
+    position: relative;
+    width: 69%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 320px) {
+    .profile__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 44% 30% 20%;
+        grid-template-areas:
+            'avatar'
+            'info'
+            'add-btn';
+        width: 100%;
+        justify-items: center;
+        height: 320px;
+    }
+}

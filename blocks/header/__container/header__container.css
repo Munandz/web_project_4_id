@@ -1,0 +1,10 @@
+.header__container {
+    width: 69%;
+    display: block;
+    position: relative;
+}
+@media only screen and (max-width: 320px) {
+    .header__container {
+        width: 100%;
+    }
+}

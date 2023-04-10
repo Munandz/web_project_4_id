@@ -1,0 +1,12 @@
+.popup__form-header {
+    font-weight: 900;
+    font-size: 150%;
+    line-height: 1.2;
+    position: relative;
+    margin: 8% 0 11% 8%;
+}
+@media only screen and (max-width: 320px) {
+    .popup__form-header {
+        margin: 8% 0 23% 8%;
+    }
+}

@@ -1,0 +1,12 @@
+.popup__field_job {
+    font-weight: 400;
+    font-size: 87.5%;
+    line-height: 1.2;
+    margin: 5% 0 0 0;
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 2% 0 2% 0.5%;
+}

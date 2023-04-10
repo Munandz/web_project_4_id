@@ -1,0 +1,10 @@
+.popup__field {
+    display: flex;
+    margin: 7% 0 0 8%;
+    flex-direction: column;
+}
+@media only screen and (max-width: 320px) {
+    .popup__field {
+        margin: 13% 0 0 8%
+    }
+}
