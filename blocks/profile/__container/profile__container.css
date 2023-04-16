@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .profile__container {
         grid-template-columns: 1fr;
         grid-template-rows: 44% 30% 20%;

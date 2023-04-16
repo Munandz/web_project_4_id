@@ -9,115 +9,91 @@
 </head>
 <body class="root">
     <header class="header">
-        <div class="header__container">
-            <img class="header__logo" src="./images/vector.svg" alt="Logo Around The US">
-            <hr class="header__line">
-        </div>
+        <img class="header__logo" src="./images/vector.svg" alt="Logo Around The US">
     </header>
 
-    <section class="profile">
-        <div class="profile__container">
-                <img class="profile__avatar" src="./images/image__avatar.jpg" alt="Gambar orang">
-            <div class="profile__info">
-                <div class="profile__info profile__info_group">
-                    <img class="profile__info profile__info_edit-btn" src="./images/pen.svg" alt="pen">
-                    <h1 class="profile__info profile__info_name">Jacques Cousteau</h1>
+    <main>
+        <section class="profile">
+            <div class="profile__container">
+                    <img class="profile__avatar" src="./images/image__avatar.jpg" alt="Gambar orang">
+                <div class="profile__info">
+                    <div class="profile__info profile__info_group">
+                        <button type="button" class="profile__info profile__info_edit-btn"><img src="./images/pen.svg" alt="pen"></button>
+                        <h1 class="profile__info profile__info_name">Jacques Cousteau</h1>
+                    </div>
+                    <h2 class="profile__info profile__info_job">Penjelajah</h2>
                 </div>
-                <h2 class="profile__info profile__info_job">Penjelajah</h2>
+                <button type="button" class="profile__add-btn"><img src="./images/add-btn.svg" alt="Add Button"></button>
             </div>
-            <img class="profile__add-btn" src="./images/add-btn.svg" alt="Add Button">
-        </div>
-    </section>
+        </section>
 
-    <section class="cards">
-        <div class="cards__container-up">
-
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
+        <section class="cards">
+                <div class="cards__card-item">
                     <img class="cards__image" src="./images/image__yosemite.jpg" alt="Lembah Yosemite">
                     <div class="cards__container">
-                        <p class="cards__paragraph">Lembah Yosemite</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
+                        <h2 class="cards__paragraph">Lembah Yosemite</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
                     </div>
                 </div>
-            </div>
     
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
-                    <img class="cards__image" src="./images/image__louise.jpg" alt="Lembah Yosemite">
+                <div class="cards__card-item">
+                    <img class="cards__image" src="./images/image__louise.jpg" alt="Danau Louise">
                     <div class="cards__container">
-                        <p class="cards__paragraph">Danau Louise</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
+                        <h2 class="cards__paragraph">Danau Louise</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
                     </div>
                 </div>
-            </div>
     
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
-                    <img class="cards__image" src="./images/image__bald.jpg" alt="Lembah Yosemite">
+                <div class="cards__card-item">
+                    <img class="cards__image" src="./images/image__bald.jpg" alt="Pegunungan Bald">
                     <div class="cards__container">
-                        <p class="cards__paragraph">Pegunungan Bald</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
+                        <h2 class="cards__paragraph">Pegunungan Bald</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
                     </div>
                 </div>
-            </div>
 
+                <div class="cards__card-item">
+                    <img class="cards__image" src="./images/image__latemar.jpg" alt="Gunung Latemar">
+                    <div class="cards__container">
+                        <h2 class="cards__paragraph">Gunung Latemar</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
+                    </div>
+                </div>
+    
+                <div class="cards__card-item">
+                    <img class="cards__image" src="./images/image__vanoise.jpg" alt="Taman Nasional Vanoise">
+                    <div class="cards__container">
+                        <h2 class="cards__paragraph">Taman Nasional Vanoise</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
+                    </div>
+                </div>
+    
+                <div class="cards__card-item">
+                    <img class="cards__image" src="./images/image__lago.jpg" alt="Lago di Braies">
+                    <div class="cards__container">
+                        <h2 class="cards__paragraph">Lago di Braies</h2>
+                        <button type="button" class="cards__heart"><img src="./images/__heart.svg" alt="heart"></button>
+                    </div>
+                </div>
+        </section>
+
+        <div class="popup">
+            <div class="popup__container">
+                <button type="button" class="popup__close-icon"><img src="./images/close-icon.svg" alt="close"></button>
+                <form class="popup__popup-form">
+                    <h2 class="popup__form-header">Edit Profil</h2>
+                    <div class="popup__field">
+                        <input type="text" name="nama" class="popup__field popup__field_name" value="Jacques Cousteau">
+                        <input type="text" name="pekerjaan" class="popup__field popup__field_job" value="Penjelajah">
+                    </div>
+                    <button type="submit" class="popup__submit-btn">Simpan</button>
+                </form>
+            </div>
         </div>
-
-        <div class="cards__container-down">
-
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
-                    <img class="cards__image" src="./images/image__latemar.jpg" alt="Lembah Yosemite">
-                    <div class="cards__container">
-                        <p class="cards__paragraph">Gunung Latemar</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
-                    <img class="cards__image" src="./images/image__vanoise.jpg" alt="Lembah Yosemite">
-                    <div class="cards__container">
-                        <p class="cards__paragraph">Taman Nasional Vanoise</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="cards__card-item">
-                <div class="cards__rectangle">
-                    <img class="cards__image" src="./images/image__lago.jpg" alt="Lembah Yosemite">
-                    <div class="cards__container">
-                        <p class="cards__paragraph">Lago di Braies</p>
-                        <img class="cards__heart" src="./images/__heart.svg" alt="heart">
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="popup">
-        <div class="popup__container">
-            <img class="popup__close-icon" src="./images/close-icon.svg" alt="logo close">
-            <form class="popup__popup-form">
-                <h2 class="popup__form-header">Edit Profil</h2>
-                <div class="popup__field">
-                    <input type="text" name="nama" class="popup__field popup__field_name" value="Jacques Cousteau">
-                    <input type="text" name="pekerjaan" class="popup__field popup__field_job" value="Penjelajah">
-                </div>
-                <button class="popup__submit-btn">Simpan</button>
-            </form>
-        </div>
-        <div class="popup__rectangle"></div>
-    </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer__container">
             <p class="footer__paragraph">© 2021 Around The U.S.</p>
-        </div>
     </footer>
     <script src="./script/script.js"></script>
 </body>

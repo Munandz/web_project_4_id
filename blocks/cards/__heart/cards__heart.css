@@ -1,6 +1,8 @@
 .cards__heart {
     color: black;
     grid-area: heart;
+    border: none;
+    background-color: transparent;
 }
 .cards__heart:hover {
     opacity: 0.5;

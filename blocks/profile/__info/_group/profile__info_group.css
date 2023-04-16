@@ -2,13 +2,13 @@
     display: flex;
     position: relative;
     width: 77%;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row-reverse;
     margin: 0 0 0 0;
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .profile__info_group {
-        width: 70%;
+        width: 68%;
         justify-items: center;
         justify-content: center;
     }
