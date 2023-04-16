@@ -1,3 +1,15 @@
 .cards__card-item {
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+}
 
+@media screen and (max-width: 320px){
+    .cards__card-item {
+        width: 125%;
+    }
 }

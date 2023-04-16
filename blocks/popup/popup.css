@@ -5,4 +5,11 @@
     height: 100%;
     display: none;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 320px) {
+    .popup {
+        width: 97%;
+    }
 }

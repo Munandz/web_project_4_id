@@ -4,5 +4,11 @@
     grid-template-areas:
         '. paragraph heart .';
     margin: 0;
-    align-items: center;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 320px) {
+    .cards__container {
+        grid-template-columns: 7% 78% 9% 6%;
+    }
 }

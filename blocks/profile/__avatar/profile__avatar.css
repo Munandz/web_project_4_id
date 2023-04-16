@@ -6,7 +6,7 @@
     margin: 0;
     display: block;
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .profile__avatar {
         width: 40%;
     }
