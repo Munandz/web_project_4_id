@@ -1,14 +1,17 @@
 .cards__container {
     display: grid;
-    grid-template-columns: 7% 80% 7% 6%;
+    /* grid-template-columns: 7% 80% 7% 6%; */
     grid-template-areas:
-        '. paragraph heart .';
+        'paragraph heart';
     margin: 0;
     align-items: baseline;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 320px) {
     .cards__container {
         grid-template-columns: 7% 78% 9% 6%;
+        grid-template-areas:
+        '. paragraph heart .';
     }
 }

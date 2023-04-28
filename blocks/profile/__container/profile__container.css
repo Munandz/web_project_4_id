@@ -13,13 +13,13 @@
 @media screen and (max-width: 320px) {
     .profile__container {
         grid-template-columns: 1fr;
-        grid-template-rows: 44% 30% 20%;
+        grid-template-rows: 50% 30% 20%;
         grid-template-areas:
             'avatar'
             'info'
             'add-btn';
         width: 100%;
         justify-items: center;
-        height: 320px;
+        height: 32vh;
     }
 }

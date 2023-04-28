@@ -14,6 +14,7 @@
 @import url(../blocks/profile/__info/_group/profile__info_group.css);
 @import url(../blocks/profile/__info/_job/profile__info_job.css);
 @import url(../blocks/profile/__info/_name/profile__info_name.css);
+@import url(../blocks/profile/__for-btn/profile__for-btn.css);
 
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__card-item/cards__card-item.css);

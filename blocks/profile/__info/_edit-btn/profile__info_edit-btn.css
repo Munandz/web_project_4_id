@@ -1,12 +1,12 @@
 .profile__info_edit-btn {
     margin: 2% 0 0 0;
-    padding: 1.5%;
+    padding: 65.5%;
     border: 1px solid #FFFFFF;
     background-color: transparent;
     position: relative;
-    width: 5.5%;
-    display: flex;
-    align-items: center;
+    /* width: 5.5%; */
+    /* display: flex; */
+    /* align-items: center; */
 }
 .profile__info_edit-btn:hover {
     cursor: pointer;
@@ -14,8 +14,8 @@
 }
 @media screen and (max-width: 320px) {
     .profile__info_edit-btn {
-        width: 7%;
+        width: 65%;
         margin: 0;
-        padding: 1%;
+        padding: 35%;
     }
 }

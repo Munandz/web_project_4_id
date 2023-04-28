@@ -8,7 +8,7 @@
 }
 @media screen and (max-width: 320px) {
     .profile__info_group {
-        width: 68%;
+        width: 70%;
         justify-items: center;
         justify-content: center;
     }
