@@ -4,7 +4,7 @@
     background-color: white;
     position: relative;
     display: grid;
-    grid-template-rows: 80% 20%;
+    /* grid-template-rows: 80% 20%; */
     align-items: center;
 }
 
