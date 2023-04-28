@@ -11,6 +11,8 @@ let jobInput = document.querySelector('.popup__field_job');
 
 function popupEnabled() {
     popup.classList.add('popup_opened');
+    nameInput.value = nameText.textContent;
+    jobInput.value = jobText.textContent;
 }
 
 function popupDisabled() {
