@@ -1,9 +1,16 @@
 .popup__field {
     display: flex;
-    margin: 7% 0 0 8%;
+    margin: 5% 0 0 4.5%;
+    font-size: 87.5%;
+    line-height: 1.2;
+    width: 90.5%;
+    border: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 2% 0 1% 0%;
     flex-direction: column;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     .popup__field {
         margin: 13% 0 0 8%
     }
