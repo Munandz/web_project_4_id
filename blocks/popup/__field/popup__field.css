@@ -9,8 +9,9 @@
     background-color: transparent;
     padding: 2% 0 1% 0%;
     flex-direction: column;
+    border-bottom: 1px solid #c6c6c6;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .popup__field {
         margin: 13% 0 0 8%
     }

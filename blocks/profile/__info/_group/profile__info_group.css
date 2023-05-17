@@ -6,7 +6,7 @@
     flex-direction: row-reverse;
     margin: 0 0 0 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .profile__info_group {
         width: 220px;
         justify-items: center;

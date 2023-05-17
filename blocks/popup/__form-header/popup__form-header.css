@@ -5,7 +5,7 @@
     position: relative;
     margin: 9% 0 6% 8.5%;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .popup__form-header {
         margin: 8% 0 23% 8%;
     }

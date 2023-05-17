@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
     .cards__card-item {
         width: 125%;
     }

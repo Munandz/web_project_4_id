@@ -9,7 +9,7 @@
     overflow: hidden;
     white-space: nowrap; 
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .profile__info_job {
         font-size: 87.5%;
         text-align: center;

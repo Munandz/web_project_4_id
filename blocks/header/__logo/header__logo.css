@@ -4,7 +4,7 @@
     width: 13.5%;
     border-bottom: 1px solid #545454;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .header__logo {
         width: 39%;
         position: relative;
