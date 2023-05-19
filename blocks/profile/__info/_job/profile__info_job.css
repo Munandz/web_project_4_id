@@ -13,5 +13,6 @@
     .profile__info_job {
         font-size: 87.5%;
         text-align: center;
+        width: 66%
     }
 }
